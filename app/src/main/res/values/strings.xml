@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NightMode</string>
+    <string name="activity2">Just Checking :)</string>
+    <string name="activity">Day Mode</string>
+
+    <string-array name="Languages">
+        <item>En</item>
+        <item>Tr</item>
+    </string-array>
+</resources>
