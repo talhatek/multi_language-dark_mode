@@ -22,6 +22,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
@@ -35,5 +42,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     implementation "androidx.preference:preference-ktx:1.1.1"
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //dataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0-alpha05"
+    //lifecycle
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+
+    //coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2"
 
 }
